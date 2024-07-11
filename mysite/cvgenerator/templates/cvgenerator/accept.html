@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container my-3" >
+    <h1 class="p-3 mb-3 bg-dark text-white">CV Generator</h1>
+        <hr>
+        <br>
+
+
+                <form  method="post">
+                    {% csrf_token %}
+                    <div class="row">
+                    <div class="col-md-8">
+    <div class="form-group">
+    <label for="" class="form-label font-weight-bold">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+    </div>
+
+    <div class="form-group">
+    <label for="" class="form-label font-weight-bold">Email</label>
+    <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email address">
+    </div>
+
+    <div class="form-group">
+    <label for="" class="form-label font-weight-bold">Phone</label>
+    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+    </div>
+
+    <div class="form-group">
+    <label for="" class="form-label font-weight-bold">About You</label>
+        <textarea type="text" class="form-control" id="about" name="about" placeholder="Enter about yourself"></textarea>
+    </div>
+
+    <div class="form-group">
+    <label for="" class="form-label font-weight-bold">Degree</label>
+    <input type="text" class="form-control" id="degree" name="degree" placeholder="Enter your degree">
+    </div>
+</div>
+                        <div class="col-md-6">
+    <div class="form-group">
+    <label for="" class="form-label font-weight-bold">School</label>
+    <input type="text" class="form-control" id="school" name="school" placeholder="Enter your school">
+    </div>
+
+    <div class="form-group">
+    <label for="" class="form-label font-weight-bold">University</label>
+    <input type="text" class="form-control" id="university" name="university" placeholder="Enter your university">
+    </div>
+
+    <div class="form-group">
+    <label for="" class="form-label font-weight-bold">Experience</label>
+    <textarea type="text" class="form-control" id="experience" name="experience" placeholder="Enter your experience"></textarea>
+    </div>
+
+    <div class="form-group">
+    <label for="" class="form-label font-weight-bold">Skills</label>
+    <textarea type="text" class="form-control" id="skills" name="skills" placeholder="Enter your skills"></textarea>
+    </div>
+</div>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+    </div>
+</body>
+</html>

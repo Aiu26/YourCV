@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{user_profile.name}}</h1>
+    <h4>{{user_profile.email}}</h4>
+    <h4>{{user_profile.phone}}</h4>
+<hr/>
+<br/>
+<strong>About</strong>
+<p>{{user_profile.about}}</p>
+    <hr/>
+<strong>Skills</strong>
+<p>{{user_profile.skills}}</p>
+    <hr/>
+<strong>Education</strong>
+<ul>
+    <li>{{user_profile.school}}</li>
+    <li>{{user_profile.degree}} from {{user_profile.university}}</li>
+</ul>
+    <hr/>
+<strong>Experience</strong>
+<p>{{user_profile.experience}}</p>
+<hr/>
+</body>
+</html>
